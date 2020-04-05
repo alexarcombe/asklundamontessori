@@ -1,0 +1,72 @@
+.navbar-nav h5,
+.navbar img {
+  cursor: pointer;
+}
+
+.bg-blue {
+  background-color: #278eba;
+}
+
+.facebook {
+  color: #3b5998;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.instagram {
+  width: 1em !important;
+  color: white;
+  padding: 4px;
+  border-radius: 20% !important;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+footer h4 {
+  color: azure;
+}
+.footer-links {
+  color: rgb(150, 146, 146);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer-links:hover {
+  color: #eee;
+  text-decoration: none;
+}
+
+#queue-button a {
+  text-decoration: none;
+  color: rgb(192, 192, 192);
+}
+
+#queue-button:hover a {
+  color: #eee;
+}
+
+.utstickande {
+  color: #2abe68;
+}
+
+.copyright {
+  color: rgb(87, 87, 87);
+}
+
+.no-list-style {
+  list-style-type: none;
+}
+
+.bg-gray {
+  background-color: #eee;
+}
+
+.border-2 {
+  border-width: 2px !important;
+}

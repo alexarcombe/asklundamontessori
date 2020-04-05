@@ -1,0 +1,10 @@
+<RoutingRules>
+   <RoutingRule>
+   <Condition>
+      <KeyPrefixEquals>normer</KeyPrefixEquals>
+   </Condition>
+   <Redirect>
+     <ReplaceKeyWith></ReplaceKeyWith>
+   </Redirect>
+   </RoutingRule>
+ </RoutingRules>

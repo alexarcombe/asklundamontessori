@@ -1,0 +1,19 @@
+.card-columns ul {
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .card-columns {
+    -webkit-column-count: 2 !important;
+    -moz-column-count: 2 !important;
+    column-count: 2 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-columns {
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+    column-count: 1 !important;
+  }
+}

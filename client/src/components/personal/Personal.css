@@ -1,0 +1,70 @@
+.person-row img {
+  margin-top: -50px;
+}
+
+#personal-section a {
+  color: black;
+  text-decoration: none;
+}
+
+#personal-section a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+#Eken {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/oak.jpg');
+}
+
+#Björken {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/birch.jpg');
+}
+
+#Kastanjen {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/chestnut.jpg');
+}
+
+#Granen {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/fir.jpg');
+}
+
+#Lönnen {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/maple.jpg');
+}
+
+#Pilen {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/willow.jpg');
+}
+
+#Rönnen {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/rowan.jpg');
+}
+
+#Tallen {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/pine.jpg');
+}
+#Eken h1,
+#Björken h1,
+#Pilen h1,
+#Kastanjen h1,
+#Lönnen h1,
+#Rönnen h1,
+#Tallen h1 {
+  color: white;
+}
