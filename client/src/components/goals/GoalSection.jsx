@@ -8,8 +8,8 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 function GoalSection(props) {
   const { title, textList, imageRight, imageSrc } = props;
   const check = <FontAwesomeIcon icon={faCheck} className="mr-2" />;
-  const items = textList.map((text) => (
-    <li key={text}>
+  const items = textList.map((text, index) => (
+    <li key={index}>
       {check} {text}
     </li>
   ));

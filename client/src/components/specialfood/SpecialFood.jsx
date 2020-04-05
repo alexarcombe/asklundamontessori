@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import SpecialFoodColumn from './SpecialFoodColumn';
 
 function SpecialFood() {
   return (
@@ -209,22 +210,6 @@ function SpecialFood() {
         </Col>
       </Row>
     </Container>
-  );
-}
-
-function SpecialFoodColumn(props) {
-  const { image, title, textRows } = props;
-  const text = textRows.map((t) => <p className="mb-1"> {t} </p>);
-  return (
-    <Row className="text-center">
-      <Col lg={4} className="p-0 my-lg-0 my-3">
-        <Image src={`/images/specialfood/${image}.jpg`} fluid />
-      </Col>
-      <Col lg={8} className="my-auto">
-        <h4>{title}</h4>
-        {text}
-      </Col>
-    </Row>
   );
 }
 
