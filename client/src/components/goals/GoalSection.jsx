@@ -41,8 +41,8 @@ function GoalSection(props) {
 
 GoalSection.propTypes = {
   title: PropTypes.string.isRequired,
-  textList: PropTypes.string.isRequired,
-  imageRight: PropTypes.string.isRequired,
+  textList: PropTypes.arrayOf(PropTypes.string).isRequired,
+  imageRight: PropTypes.bool.isRequired,
   imageSrc: PropTypes.string.isRequired,
 };
 

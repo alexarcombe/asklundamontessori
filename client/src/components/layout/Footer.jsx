@@ -13,19 +13,19 @@ function Footer() {
         <Row>
           <Col md={4} className="text-center">
             <h4 className="mb-4">Snabblänkar</h4>
-            <Link exact to="/gdpr" className="footer-links">
+            <Link to="/gdpr" className="footer-links">
               GDPR
             </Link>
-            <Link exact to="/goals" className="footer-links">
+            <Link to="/goals" className="footer-links">
               Målsättning
             </Link>
-            <Link exact to="/departments" className="footer-links">
+            <Link to="/departments" className="footer-links">
               Avdelningar
             </Link>
-            <Link exact to="/personal" className="footer-links">
+            <Link to="/personal" className="footer-links">
               Personal
             </Link>
-            <Link exact to="/queue" className="footer-links">
+            <Link to="/queue" className="footer-links">
               Köinformation
             </Link>
           </Col>
