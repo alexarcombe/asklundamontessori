@@ -93,13 +93,13 @@ function Queue() {
       <Row>
         <Col className="text-center">
           <p>
-            För att anmäla ditt barn fyll i detta{' '}
+            För att anmäla ditt barn fyll i detta
             <a
               href="https://forms.office.com/Pages/ResponsePage.aspx?id=C3kBrfTRDEGHxRkqbTtlV82_q059WitGswxqNsLOpldUNjAyVjJYSzNITVBIVzdCTVBHNFA3OUFGViQlQCN0PWcu"
               target="_blank"
               rel="noopener noreferrer"
             >
-              formulär
+              {' formulär'}
             </a>
             .
           </p>

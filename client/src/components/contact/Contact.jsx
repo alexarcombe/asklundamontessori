@@ -1,6 +1,31 @@
 import React from 'react';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import MyGoogleMaps from './MyGoogleMaps';
+import ContactCard from './ContactCard';
+
+const contactPerson = [
+  {
+    id: 0,
+    name: 'Maria Arcombe',
+    role: 'Rektor',
+    phone: '0707-884201',
+    email: 'maria@asklundamontessori.se',
+  },
+  {
+    id: 0,
+    name: 'Eva Kellheim',
+    role: 'Biträdande rektor',
+    phone: '0736-003483',
+    email: 'eva.k@asklundamontessori.se',
+  },
+  {
+    id: 0,
+    name: 'Lina Jönsson',
+    role: 'Administratör',
+    phone: '0736-123883',
+    email: 'lina@asklundamontessori.se',
+  },
+];
 
 function Contact() {
   return (
@@ -14,31 +39,14 @@ function Contact() {
           <h5>Välkomna att kontakta oss om ni har frågor.</h5>
         </Col>
       </Row>
-      <Row className="text-center justify-content-around">
-        <Col lg={4} md={6} className="mt-3">
-          <p>
-            <strong>Maria Arcombe – Rektor</strong>
-          </p>
-          <p>Telefon: 0707-884201</p>
-
-          <p>e-post: maria@asklundamontessori.se</p>
-        </Col>
-        <Col lg={4} md={6} className="mt-3">
-          <p>
-            <strong>Eva Kellheim – Biträdande rektor</strong>
-          </p>
-          <p>Telefon: 0736-003483</p>
-          <p>e-post: eva.k@asklundamontessori.se</p>
-        </Col>
-        <Col lg={4} md={6} className="mt-3">
-          <p>
-            <strong>Lina Jönsson – Administratör</strong>
-          </p>
-          <p>Telefon: 0736-123883</p>
-          <p>e-post: lina@asklundamontessori.se</p>
-        </Col>
+      <Row className="text-center justify-content-around contact-person">
+        {contactPerson.map((pers) => (
+          <Col key={pers.id} lg={4} md={6} className="mt-5">
+            <ContactCard person={pers} />
+          </Col>
+        ))}
       </Row>
-      <Row className="my-3">
+      <Row className="my-5">
         <Col md={4} className="text-center my-auto">
           <h5>Kontoret är bemannat:</h5>
 

@@ -35,7 +35,7 @@ function Footer() {
             <p className="text-white">Norra Leden 1</p>
             <p className="text-white">235 37 Vellinge</p>
             <p className="text-white">Tel: 040 - 42 48 89</p>
-            <p className="text-white">Mail: maria@asklundamontessori.se</p>
+            <p className="text-white">Mail: info@asklundamontessori.se</p>
           </Col>
           <Col md={4} className="text-center">
             <h4 className="mb-4">Följ oss</h4>

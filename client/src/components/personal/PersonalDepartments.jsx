@@ -1,6 +1,7 @@
 import React from 'react';
-import { Row, Col, Card, Image } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import PersonCard from './PersonCard';
 
 function PersonalDepartments(props) {
   const { personal } = props;
@@ -38,19 +39,7 @@ function PersonalDepartments(props) {
         </Col>
         {rows[department].map((pers) => (
           <Col key={pers.id} lg={3} md={4} sm={6} className="mb-5">
-            <Card>
-              <Card.Body className="text-center">
-                <Image
-                  src="/images/example.jpg"
-                  roundedCircle
-                  fluid
-                  className="w-75"
-                />
-                <Card.Title>{pers.name}</Card.Title>
-                <Card.Text className="text-muted">{pers.role}</Card.Text>
-                <Card.Text>{pers.text}</Card.Text>
-              </Card.Body>
-            </Card>
+            <PersonCard person={pers} />
           </Col>
         ))}
       </Row>
