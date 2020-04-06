@@ -24,20 +24,20 @@ function Pedagogik() {
           </p>
         </Col>
       </Row>
-      <Row>
-        <Col className="col-12 text-center">
+      <Row className="text-center">
+        <Col className="col-12">
           <h4>
             Montessoripedagogiken har nått stor spridning i hela världen och det
             beror på att den sätter:
           </h4>
         </Col>
-        <Col md={4} className="utstickande text-center my-2">
+        <Col lg={4} className="utstickande my-2">
           ”Det enskilda barnet i centrum”
         </Col>
-        <Col md={4} className="utstickande text-center my-2">
+        <Col lg={4} className="utstickande my-2">
           ”Hjälp mig att hjälpa mig själv”
         </Col>
-        <Col md={4} className="utstickande text-center my-2">
+        <Col lg={4} className="utstickande my-2">
           ”Hjälp mig att finna mig själv”
         </Col>
       </Row>

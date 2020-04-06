@@ -1,9 +1,23 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, CardGroup, Card } from 'react-bootstrap';
 
 const avdelningar = [
   {
     id: 0,
+    name: 'Asken 1',
+    epost: 'asken1@asklundamontessori.se',
+    imageURL: '/images/department/asken1.jpg',
+    funfact: 'something about asken',
+  },
+  {
+    id: 1,
+    name: 'Asken 2',
+    epost: 'asken2@asklundamontessori.se',
+    imageURL: '/images/department/asken2.jpg',
+    funfact: 'something about asken',
+  },
+  {
+    id: 2,
     name: 'Björken',
     telefon: '0709-66 77 71',
     epost: 'bjorken@asklundamontessori.se',
@@ -13,7 +27,7 @@ const avdelningar = [
   },
 
   {
-    id: 1,
+    id: 3,
     name: 'Eken',
     telefon: '0709-66 09 67',
     epost: 'eken@asklundamontessori.se',
@@ -23,7 +37,7 @@ const avdelningar = [
   },
 
   {
-    id: 2,
+    id: 4,
     name: 'Granen',
     telefon: '0709-66 08 95',
     epost: 'granen@asklundamontessori.se',
@@ -33,7 +47,7 @@ const avdelningar = [
   },
 
   {
-    id: 3,
+    id: 5,
     name: 'Kastanjen',
     telefon: '0709-66 08 69',
     epost: 'kastanjen@asklundamontessori.se',
@@ -43,7 +57,7 @@ const avdelningar = [
   },
 
   {
-    id: 4,
+    id: 6,
     name: 'Lönnen',
     telefon: '0736-12 56 11',
     epost: 'lonnen@asklundamontessori.se',
@@ -53,7 +67,7 @@ const avdelningar = [
   },
 
   {
-    id: 5,
+    id: 7,
     name: 'Pilen',
     telefon: '0736-12 37 12',
     epost: 'pilen@asklundamontessori.se',
@@ -63,7 +77,7 @@ const avdelningar = [
   },
 
   {
-    id: 6,
+    id: 8,
     name: 'Rönnen',
     telefon: '0736-12 38 37',
     epost: 'ronnen@asklundamontessori.se',
@@ -73,7 +87,7 @@ const avdelningar = [
   },
 
   {
-    id: 7,
+    id: 9,
     name: 'Tallen',
     telefon: '0709-66 41 16',
     epost: 'tallen@asklundamontessori.se',
@@ -95,7 +109,9 @@ function Departments() {
         </Col>
       </Row>
       <Row className="mb-5">
-        <GetDepartmentsNoText departments={avdelningar} />
+        <CardGroup className="justify-content-around">
+          <GetDepartmentsNoText departments={avdelningar} />
+        </CardGroup>
       </Row>
       <Row>
         <GetDepartments departments={avdelningar} />
