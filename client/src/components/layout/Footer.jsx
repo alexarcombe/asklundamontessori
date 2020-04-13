@@ -70,7 +70,7 @@ function Footer() {
         <Row>
           <Col className="text-center copyright">
             <p>
-              Copyright &copy; {year} Asklunda Montessori Förskola, all rights
+              Copyright &copy; {year} Asklunda Montessoriförskola, all rights
               reserved
             </p>
           </Col>

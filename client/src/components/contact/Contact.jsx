@@ -1,33 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
+import axios from 'axios';
 import MyGoogleMaps from './MyGoogleMaps';
 import ContactCard from './ContactCard';
 
-const contactPerson = [
-  {
-    id: 0,
-    name: 'Maria Arcombe',
-    role: 'Rektor',
-    phone: '0707-884201',
-    email: 'maria@asklundamontessori.se',
-  },
-  {
-    id: 0,
-    name: 'Eva Kellheim',
-    role: 'Biträdande rektor',
-    phone: '0736-003483',
-    email: 'eva.k@asklundamontessori.se',
-  },
-  {
-    id: 0,
-    name: 'Lina Jönsson',
-    role: 'Administratör',
-    phone: '0736-123883',
-    email: 'lina@asklundamontessori.se',
-  },
-];
-
 function Contact() {
+  const [contactPersonal, setContactPersonal] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        'https://hxxwvdzf3i.execute-api.eu-north-1.amazonaws.com/Prod/contact'
+      )
+      .then((res) =>
+        setContactPersonal(res.data.body.Responses.AsklundaPersonal)
+      )
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <Container className="section-margin">
       <Row>
@@ -40,7 +29,7 @@ function Contact() {
         </Col>
       </Row>
       <Row className="text-center justify-content-around contact-person">
-        {contactPerson.map((pers) => (
+        {contactPersonal.map((pers) => (
           <Col key={pers.id} lg={4} md={6} className="mt-5">
             <ContactCard person={pers} />
           </Col>

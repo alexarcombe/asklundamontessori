@@ -1,5 +1,5 @@
-.card img {
-  margin-top: -50px;
+#personal-section .card img {
+  margin-top: -75px;
 }
 
 #personal-section a {
@@ -10,6 +10,18 @@
 #personal-section a:hover {
   color: blue;
   text-decoration: none;
+}
+
+#Asken1 {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/asken1.jpg');
+}
+
+#Asken2 {
+  background: no-repeat center scroll;
+  background-size: cover;
+  background-image: url('/images/department/asken2.jpg');
 }
 
 #Eken {
@@ -60,7 +72,6 @@
   background-image: url('/images/department/pine.jpg');
 }
 #Eken h1,
-#Björken h1,
 #Pilen h1,
 #Kastanjen h1,
 #Lönnen h1,

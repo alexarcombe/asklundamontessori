@@ -61,7 +61,7 @@ function CustomNavbar() {
           <Navbar.Brand>Asklundamontessori</Navbar.Brand>
         </LinkContainer>
         <p className="text-muted mb-0 d-none d-lg-block">
-          "Med barnet i centrum i vår unika miljö, sår vi frön för livet." -
+          "Med barnet i centrum i vår unika miljö, sår vi frön för livet" -
           Nytänkade Montessoriförskola
         </p>
       </div>

@@ -1,10 +1,18 @@
 <RoutingRules>
-   <RoutingRule>
-   <Condition>
+  <RoutingRule>
+    <Condition>
       <KeyPrefixEquals>normer</KeyPrefixEquals>
-   </Condition>
-   <Redirect>
-     <ReplaceKeyWith></ReplaceKeyWith>
-   </Redirect>
-   </RoutingRule>
- </RoutingRules>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith></ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>admin</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyWith>admin/</ReplaceKeyWith>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>
