@@ -2,24 +2,35 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Navbar from './components/layout/CustomNavbar';
-import Footer from './components/layout/Footer';
-import Normer from './components/normer/Normer';
-import Council from './components/council/Council';
-import Values from './components/values/Values';
-import Goals from './components/goals/Goals';
-import Quality from './components/quality/Quality';
-import Mission from './components/mission/Mission';
-import Home from './components/home/Home';
-import SickCare from './components/sickcare/SickCare';
-import Comments from './components/comments/Comments';
-import SpecialFood from './components/specialfood/SpecialFood';
-import Pedagogik from './components/pedagogik/Pedagogik';
-import Departments from './components/departments/Departments';
-import Personal from './components/personal/Personal';
-import Queue from './components/queue/Queue';
-import Contact from './components/contact/Contact';
-import GDPR from './components/gdpr/GDPR';
+
+import Navbar from './components/Layout/CustomNavbar';
+import Home from './components/Home';
+import Footer from './components/Layout/Footer';
+
+// first navbar column
+import Normer from './components/Normer';
+import Council from './components/Council';
+import Values from './components/Values';
+import Goals from './components/Goals';
+import Quality from './components/Quality';
+import Mission from './components/Mission';
+
+// second navbar column
+import SickCare from './components/Sickcare';
+import Comments from './components/Comments';
+import SpecialFood from './components/SpecialFood';
+import FoodPolicy from './components/FoodPolicy';
+
+// thirs navbar column
+import Pedagogik from './components/Pedagogik';
+import Departments from './components/Departments';
+import Personal from './components/Personal';
+import Queue from './components/Queue';
+import GDPR from './components/GDPR';
+import Contact from './components/Contact';
+
+// last navbar column
+import Offensive from './components/Offensive';
 
 function App() {
   return (
@@ -43,6 +54,8 @@ function App() {
         <Route exact path="/queue" component={Queue} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/gdpr" component={GDPR} />
+        <Route exact path="/offensive" component={Offensive} />
+        <Route exact path="/foodpolicy" component={FoodPolicy} />
       </Switch>
       <Footer />
     </Router>

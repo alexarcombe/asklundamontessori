@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import { Row, Col, Navbar, Nav, Image, Button } from 'react-bootstrap';
+import { makeStyles } from '@material-ui/styles';
 import { LinkContainer } from 'react-router-bootstrap';
 import classnames from 'classnames';
 import useWindowSize from '../../hooks/useWindowSize';
+
+const useStyle = makeStyles({
+  link: {
+    marginBottom: '30px',
+    textDecoration: 'none !important',
+  },
+});
 
 let toogleRef = '';
 
@@ -15,6 +23,7 @@ function CustomNavbar() {
   const [showHandlingsPlan, setShowHandlingsPlan] = useState(false);
   const [showOmOss, setShowOmOss] = useState(false);
   const [showBlanketter, setShowBlanketter] = useState(false);
+  const classes = useStyle();
   const { width } = useWindowSize();
 
   function onClick(e) {
@@ -71,14 +80,11 @@ function CustomNavbar() {
         variant="dark"
         size="lg"
         className="ml-auto mr-4 d-none d-sm-block"
+        href="https://forms.office.com/Pages/ResponsePage.aspx?id=C3kBrfTRDEGHxRkqbTtlV82_q059WitGswxqNsLOpldUNjAyVjJYSzNITVBIVzdCTVBHNFA3OUFGViQlQCN0PWcu"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <a
-          href="https://forms.office.com/Pages/ResponsePage.aspx?id=C3kBrfTRDEGHxRkqbTtlV82_q059WitGswxqNsLOpldUNjAyVjJYSzNITVBIVzdCTVBHNFA3OUFGViQlQCN0PWcu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Köanmälan
-        </a>
+        Köanmälan
       </Button>
       <Navbar.Toggle
         aria-controls="menu"
@@ -87,6 +93,16 @@ function CustomNavbar() {
       <Navbar.Collapse id="menu">
         <Nav className="mt-2">
           <Row className="text-white text-center">
+            <Col className="d-block d-sm-none mb-2">
+              <a
+                href="https://forms.office.com/Pages/ResponsePage.aspx?id=C3kBrfTRDEGHxRkqbTtlV82_q059WitGswxqNsLOpldUNjAyVjJYSzNITVBIVzdCTVBHNFA3OUFGViQlQCN0PWcu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`h5 text-white ${classes.link}`}
+              >
+                Köanmälan
+              </a>
+            </Col>
             <Col md={3}>
               <h5 name="verksamhet" onClick={onClick}>
                 Verksamhet
@@ -139,12 +155,6 @@ function CustomNavbar() {
                 text="Vård Av Sjukt Barn"
               />
               <CustomLink
-                to="/"
-                show={showHandlingsPlan}
-                width={width}
-                text="Likabehandlingsplan"
-              />
-              <CustomLink
                 to="/comments"
                 show={showHandlingsPlan}
                 width={width}
@@ -163,7 +173,7 @@ function CustomNavbar() {
                 text="Barn med Särskild Kost"
               />
               <CustomLink
-                to="/"
+                to="/foodpolicy"
                 show={showHandlingsPlan}
                 width={width}
                 text="Matpolicy"
@@ -215,7 +225,7 @@ function CustomNavbar() {
                 Blanketter
               </h5>
               <CustomLink
-                to="/"
+                to="/offensive"
                 show={showBlanketter}
                 width={width}
                 text="Kränkande Behandling"
@@ -233,7 +243,18 @@ function CustomNavbar() {
               </a>
 
               <a
-                href="https://asklundamontessori.s3.eu-north-1.amazonaws.com/Anma%CC%88lningsblankett-synpunkter-och-klagoma%CC%8Al-2018.docx"
+                href="https://s3.eu-north-1.amazonaws.com/asklundamontessori.se/Likabehandlingsplan-2021.pdf"
+                className={classnames('nav-link', {
+                  'd-none': !showBlanketter && width < 768,
+                })}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Likabehandlingsplan
+              </a>
+
+              <a
+                href="https://s3.eu-north-1.amazonaws.com/asklundamontessori.se/Anma%CC%88lningsblankett-synpunkter-och-klagoma%CC%8Al-2020.docx"
                 className={classnames('nav-link', {
                   'd-none': !showBlanketter && width < 768,
                 })}
@@ -242,7 +263,7 @@ function CustomNavbar() {
               </a>
 
               <a
-                href="https://asklundamontessori.s3.eu-north-1.amazonaws.com/Blankett-fo%CC%88r-Barn-med-annan-kost-pa%CC%8A-Asklunda-Montessorifo%CC%88rskola.doc"
+                href="https://s3.eu-north-1.amazonaws.com/asklundamontessori.se/Blankett-fo%CC%88r-Barn-med-annan-kost-pa%CC%8A-Asklunda-Montessorifo%CC%88rskola-2020.doc"
                 className={classnames('nav-link', {
                   'd-none': !showBlanketter && width < 768,
                 })}
@@ -250,10 +271,12 @@ function CustomNavbar() {
                 Barn med Särskild Kost
               </a>
               <a
-                href="https://asklundamontessori.s3.eu-north-1.amazonaws.com/Uppsa%CC%88gning-av-plats.doc"
+                href="https://s3.eu-north-1.amazonaws.com/asklundamontessori.se/Uppsa%CC%88gning-av-plats-2020.pdf"
                 className={classnames('nav-link', {
                   'd-none': !showBlanketter && width < 768,
                 })}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Uppsägning av plats
               </a>

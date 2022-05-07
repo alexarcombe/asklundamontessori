@@ -1,0 +1,8 @@
+{
+  "id": "",
+  "department": "",
+  "imageUrl": "",
+  "name": "",
+  "phone": "",
+  "role": ""
+}

@@ -12,58 +12,74 @@
   text-decoration: none;
 }
 
-#Asken1 {
-  background: no-repeat center scroll;
+#Administration {
+  background-image: url('/images/home/asklunda.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('/images/department/asken1.jpg');
+  background-position: center;
 }
 
-#Asken2 {
-  background: no-repeat center scroll;
+#Asken-Kronan {
+  background-image: url('/images/department/asken1.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+#Asken-Stammen {
   background-image: url('/images/department/asken2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #Eken {
-  background: no-repeat center scroll;
-  background-size: cover;
   background-image: url('/images/department/oak.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #Björken {
-  background: no-repeat center scroll;
-  background-size: cover;
   background-image: url('/images/department/birch.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #Kastanjen {
-  background: no-repeat center scroll;
-  background-size: cover;
   background-image: url('/images/department/chestnut.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #Granen {
-  background: no-repeat center scroll;
-  background-size: cover;
   background-image: url('/images/department/fir.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #Lönnen {
-  background: no-repeat center scroll;
-  background-size: cover;
   background-image: url('/images/department/maple.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #Pilen {
-  background: no-repeat center scroll;
-  background-size: cover;
   background-image: url('/images/department/willow.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #Rönnen {
-  background: no-repeat center scroll;
-  background-size: cover;
   background-image: url('/images/department/rowan.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #Tallen {
@@ -76,6 +92,7 @@
 #Kastanjen h1,
 #Lönnen h1,
 #Rönnen h1,
-#Tallen h1 {
+#Tallen h1,
+#Asken-Stammen h1 {
   color: white;
 }

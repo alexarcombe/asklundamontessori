@@ -13,7 +13,7 @@ function PersonalDepartments(props) {
       return (
         <Row
           key={department}
-          id={department}
+          id={department.replace(/ /g, '')}
           className={`justify-content-around person-row mt-5 pt-2 border-top border-2`}
         >
           <Col className="col-12">

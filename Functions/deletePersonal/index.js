@@ -13,7 +13,7 @@ exports.handler = async (event) => {
   const id = event.pathParameters.delete;
 
   var params = {
-    TableName: 'AsklundaPersonal',
+    TableName: 'Personal',
     Key: {
       id,
     },

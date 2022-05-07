@@ -1,0 +1,79 @@
+.showcase {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 116px);
+  background-color: #343a40aa;
+}
+
+.showcase__video {
+  width: auto;
+  height: auto;
+  max-width: 100vw;
+  max-height: calc(100vh - 116px);
+}
+
+.carousel h1 {
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 3px 3px #000;
+  font-size: 60px;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.carousel {
+
+  font-size: 20px;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 114;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-image-1,
+.carousel-image-2,
+.carousel-image-3 {
+  background: no-repeat center scroll;
+  background-size: cover;
+  height: calc(100vh - 114px);
+  min-height: 300px;
+  width: 100vw;
+}
+.carousel-image-1 {
+  background-image: url('/images/home/asklunda.jpg');
+}
+
+.carousel-image-2 {
+  background-image: url('/images/home/barnifocus.jpg');
+  background-position-x: 35%;
+}
+
+.carousel-image-3 {
+  background-image: url('/images/home/teachers.jpg');
+}
+
+@media (max-width: 769px) {
+  .carousel h1 {
+    font-size: 40px;
+  }
+  .carousel p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .showcase {
+    max-height: calc(100vh - 56px);
+  }
+  .carousel-image-1,
+  .carousel-image-2,
+  .carousel-image-3 {
+    height: calc(100vh - 56px);
+  }
+}

@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 
 const docClient = new AWS.DynamoDB.DocumentClient({ region: 'eu-north-1' });
 
-exports.handler = async () => {
+exports.handler = async (event) => {
   let body;
   let statusCode = '200';
   const headers = {
@@ -10,12 +10,15 @@ exports.handler = async () => {
     'Access-Control-Allow-Origin': '*',
   };
 
+  const { user } = JSON.parse(event.body);
+
   const params = {
     TableName: 'Personal',
+    Item: user,
   };
 
   try {
-    body = await docClient.scan(params).promise();
+    body = await docClient.put(params).promise();
   } catch (err) {
     statusCode = '400';
     body = err.message;

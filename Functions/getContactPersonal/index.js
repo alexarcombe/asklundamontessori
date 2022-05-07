@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 
 const docClient = new AWS.DynamoDB.DocumentClient({ region: 'eu-north-1' });
 
-exports.handler = async (event) => {
+exports.handler = async () => {
   let statusCode = '200';
   let body;
   const headers = {
@@ -12,7 +12,7 @@ exports.handler = async (event) => {
 
   var params = {
     RequestItems: {
-      AsklundaPersonal: {
+      Personal: {
         Keys: [
           {
             id: '38b6927c-02ab-44b2-93cb-e4e10bf88b78',

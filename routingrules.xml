@@ -9,10 +9,10 @@
   </RoutingRule>
   <RoutingRule>
     <Condition>
-      <KeyPrefixEquals>admin</KeyPrefixEquals>
+      <KeyPrefixEquals>council</KeyPrefixEquals>
     </Condition>
     <Redirect>
-      <ReplaceKeyWith>admin/</ReplaceKeyWith>
+      <ReplaceKeyWith></ReplaceKeyWith>
     </Redirect>
   </RoutingRule>
 </RoutingRules>
